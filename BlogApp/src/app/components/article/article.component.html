@@ -1,0 +1,77 @@
+<body>
+    <header>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-center d-flex">
+            <a class="navbar-brand" href="#">
+                <img src="../assets/subtract.png" width="200" height="70" class="p-3"
+                    [style]="{'margin-right' : '290px'}" alt=>
+            </a>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="/home">Home <i class="bi bi-house"> </i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" routerLink="/profile">Profile <i class="bi bi-person"></i></a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link " routerLink="/writing">Write a Post <i class="bi bi-pencil"></i></a>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+
+    </header>
+    <div class="m-1 p1">
+        <p class="text-center fs-3 fw-light"> In this Article we will talk about: </p>
+        <p class="text-center fs-3 fw-bold uppercase"> {{title}} </p>
+    </div>
+    <div class="container ml-8 mr-8 p-3">
+        <div class="d-flex justify-content-center mt-3 border-2 p-3">
+            <div [innerHTML]="body" class="fs-5 fw-light text-justify"></div>
+        </div>
+    </div>
+    <div class="container mb-8">
+        <p class="fs-3 fw-lighter float-end p-2"> Written by :  {{username}}</p>
+    </div>
+    <footer class="text-center bg-body-tertiary">
+        <!-- Grid container -->
+        <div class="container pt-4">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+                <!-- Facebook -->
+                <a class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"><i
+                        class="bi bi-facebook"></i></a>
+
+                <!-- Twitter -->
+                <a class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"><i
+                        class="bi bi-twitter-x"></i></a>
+
+                <!-- Google -->
+                <a class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"><i
+                        class="bi bi-google"></i></a>
+
+                <!-- Instagram -->
+                <a class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"><i
+                        class="bi bi-instagram"></i></a>
+
+                <!-- Linkedin -->
+                <a class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"><i
+                        class="bi bi-linkedin"></i></a>
+                <!-- Github -->
+                <a class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"><i
+                        class="bi bi-github"></i></a>
+            </section>
+            <!-- Section: Social media -->
+        </div>
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2024
+            <a class="text-body" href="#">X-Large.com</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+</body>

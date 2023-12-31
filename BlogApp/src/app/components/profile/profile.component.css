@@ -1,0 +1,13 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+#navbarSupportedContent
+{
+    margin-left: 550px;
+}
+.cardComp {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px; 
+    margin: 50px;
+    padding: 40px;
+}

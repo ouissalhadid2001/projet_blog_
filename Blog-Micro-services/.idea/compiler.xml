@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="eureka" />
+        <module name="gateway" />
+        <module name="Blog_ms1" />
+        <module name="Blog_ms2" />
+        <module name="Blog_authms" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Blog_authms" target="17" />
+      <module name="Blog_ms1" target="17" />
+      <module name="Blog_ms2" target="17" />
+      <module name="eureka" target="17" />
+      <module name="gateway" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Blog_authms" options="-parameters" />
+      <module name="Blog_ms1" options="-parameters" />
+      <module name="Blog_ms2" options="-parameters" />
+      <module name="eureka" options="-parameters" />
+      <module name="gateway" options="-parameters" />
+    </option>
+  </component>
+</project>
